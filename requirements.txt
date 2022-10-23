@@ -1,0 +1,8 @@
+keras==2.8.0
+numpy==1.21.6
+pandas==1.4.2
+st-btn-select==0.1.2
+streamlit==1.8.1
+tensorflow==2.8.0
+watchdog==2.1.9
+google-api-python-client 
