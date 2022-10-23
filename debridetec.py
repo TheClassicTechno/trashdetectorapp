@@ -67,7 +67,7 @@ if selection == 'CHECK YOUR PLANTS':
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
     def import_and_predict(image_data, model):
-        size = (227, 227)
+        size = (256, 256)
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
         img = tf.keras.utils.img_to_array(image)
         img = tf.expand_dims(img, 0)
