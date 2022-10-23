@@ -73,7 +73,7 @@ if selection == 'CHECK YOUR PLANTS':
         img = tf.expand_dims(img, 0)
         probs = model.predict(img)
         score = tf.nn.softmax(probs[0])
-        text = ("Shoethentic predicts that this is an image of a **{} shoe with {:.2f}% confidence**."
+        text = ("DebriDetec predicts that this is an image of **{} with {:.2f}% confidence**."
         .format(class_names[np.argmax(score)], 100 * np.max(score)))
         return text
 
