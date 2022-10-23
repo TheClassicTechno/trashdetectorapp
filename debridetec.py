@@ -67,9 +67,8 @@ if selection == 'CHECK YOUR PLANTS':
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
     def import_and_predict(image_data, model):
-        size = (100, 100)
-        #image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
-        image = np.array(Image.open(image_data).resize((100, 100)))
+        size = (227, 227)
+        image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
         img = tf.keras.utils.img_to_array(image)
         img = tf.expand_dims(img, 0)
         probs = model.predict(img)
@@ -78,26 +77,15 @@ if selection == 'CHECK YOUR PLANTS':
         .format(class_names[np.argmax(score)], 100 * np.max(score)))
         return text
 
+    
   
 
-    loaded_model = tf.keras.models.load_model('plant_disease_model2.h5')
+    loaded_model = tf.keras.models.load_model('model.h5')
     class_names = [
-    'Tomato: Late Blight',
-    'Tomato: Septoria Leaf Spot',
-    'Tomato: Spider Mites/Two Spotted Spider Mite',
-    'Tomato: Yellow Leaf Curl Virus',
-    'Tomato: Bacterial Spot',
-    'Tomato: Healthy',
-    'Tomato: Target Spot',
-    'Potato: Late Blight',
-    'Potato: Early Blight',
-    'Tomato: Early Blight',
-
-    'Bell Pepper: Healthy',
-    'Bell Pepper: Bacterial Spot',
-    'Tomato: Leaf Mold',
-    'Tomato: Mosaic Virus',
-    'Potato: Healthy']
+    'bottles',
+    'cans',
+    'containers',
+    'plastic']
 
 
     predictionText = "Prediction: Waiting for an image upload"
