@@ -268,11 +268,9 @@ if selection == 'CONTACT US':
   
     if st.button('Email Us'):
 
-        st.write('Good Morning') #displayed when the button is clicked
+        st.write("Email address [link](mailto:juliah6169@gmail.com)") #displayed when the button is clicked
 
-    else:
-
-        st.write('Have a great day') #displayed when the button is unclicked
+    
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
