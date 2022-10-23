@@ -124,7 +124,7 @@ if selection == 'CHECK YOUR PLANTS':
     submit = st.button("Submit")    
     if submit:
 
-        st.write("Your information provided has been sent to DebriDetec creators, who will then evaluate and analyze it before sending it over to cleanup organizations.")
+        st.write("**Your information provided has been sent to DebriDetec creators, who will then evaluate and analyze it before sending it over to cleanup organizations.**")
  
 
     
