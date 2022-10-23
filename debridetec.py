@@ -266,7 +266,13 @@ if selection == 'CONTACT US':
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font3"> Have a question? Email us for questions, website bugs, or concerns.</p>', unsafe_allow_html=True)
   
-    
+    if st.button('Email Us'):
+
+        st.write('Good Morning') #displayed when the button is clicked
+
+    else:
+
+        st.write('Have a great day') #displayed when the button is unclicked
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
