@@ -379,7 +379,7 @@ if selection == 'CONTACT US':
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3"> Copyright © 2022. United States.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3"> Copyright © 2022 United States</p>', unsafe_allow_html=True)
     
     
      
