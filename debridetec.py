@@ -264,11 +264,11 @@ if selection == 'CONTACT US':
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3"> Have a question? Email us for questions, website bugs, or concerns.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3"> Have a question? Feel free to contact us for questions, website bugs, or concerns.</p>', unsafe_allow_html=True)
   
     if st.button('Email Us'):
 
-        st.write("Email address [link](mailto:juliah6169@gmail.com)") #displayed when the button is clicked
+        st.write("Our [email address:](mailto:juliah6169@gmail.com)") #displayed when the button is clicked
 
     
     
