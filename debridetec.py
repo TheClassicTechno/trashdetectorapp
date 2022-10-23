@@ -108,7 +108,7 @@ if selection == 'CHECK YOUR PLANTS':
     country = st.selectbox("Select the country where the image was taken:", countries)
     if country == 'United States':
         state = st.selectbox('Select the state where the image was taken:', states)
-    city = st.text_area("Select the city/town where the image was taken:")
+    city = st.text_area("Provide the city/town where the image was taken, if known. Otherwise, put N/A:")
     area = st.text_area("Best describe the area in which the image was taken (ex: road, city street, sidewalk, beach, etc.):")
 
     st.subheader("Date")
