@@ -98,7 +98,7 @@ if selection == 'CHECK YOUR PLANTS':
     
     #st.markdown('<p class="font2">predictionText</p>', unsafe_allow_html=True)
     st.markdown(""" <style> .font {
-    font-size:50px ; font-weight: 800; color: #2e0a06; background-color: #ff958a;} 
+    font-size:30px ; font-weight: 800; color: #2e0a06; background-color: #ff958a;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font"> Providing More Info On Uploaded Image</p>', unsafe_allow_html=True)
     
@@ -108,6 +108,7 @@ if selection == 'CHECK YOUR PLANTS':
     country = st.selectbox("Select the country where the image was taken:", countries)
     if country == 'United States':
         state = st.selectbox('Select the state where the image was taken:', states)
+    city = st.selectbox("Select the city/town where the image was taken:")
     area = st.text_area("Best describe the area in which the image was taken (ex: road, city street, sidewalk, beach, etc.):")
 
     st.subheader("Date")
