@@ -116,7 +116,7 @@ if selection == 'ABOUT OUR APP':
     add_bg_from_local('beachbackground.jpg')    
     
     st.markdown(""" <style> .font {
-    font-size:50px ; font-weight: 800; color: #7792E3; background-color: #fffafa;} 
+    font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">About PlantDoc</p>', unsafe_allow_html=True)
    
@@ -183,7 +183,7 @@ if selection == 'PLANT DISEASES INFO':
     add_bg_from_local('beachbackground.jpg')    
     
     st.markdown(""" <style> .font {
-    font-size:50px ; font-weight: 800; color: #7792E3; background-color: #fffafa;} 
+    font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">About Common Plant Disease + How to Prevent Them</p>', unsafe_allow_html=True)
    
@@ -251,7 +251,7 @@ if selection == 'CONTACT US':
     add_bg_from_local('beachbackground.jpg')    
     
     st.markdown(""" <style> .font {
-    font-size:50px ; font-weight: 800; color: #7792E3; background-color: #fffafa;} 
+    font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">Contact PlantDoc Creators</p>', unsafe_allow_html=True)
    
