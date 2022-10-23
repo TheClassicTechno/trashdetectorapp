@@ -115,7 +115,10 @@ if selection == 'CHECK YOUR PLANTS':
     email_address = st.text_input("Email Address:")
     phone_number = st.text_input("Phone Number:")
     submit = st.button("Submit")    
-    st.markdown("This button currently doesn't do anything, but once **Corally** partners with various coral reef organizations, it will submit all of this information to connected organizations.")
+    if submit:
+
+        st.write("Your information provided has been sent to DebriDetec creators, who will then evaluate and analyze it before sending it over to cleanup organizations.")
+ 
 
     
 if selection == 'ABOUT OUR APP':
