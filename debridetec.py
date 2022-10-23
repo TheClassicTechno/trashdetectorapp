@@ -36,7 +36,7 @@ if selection == 'CHECK YOUR PLANTS':
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('plantbackground.jpg')    
+    add_bg_from_local('beachbackground.jpg')    
       
 
                               
@@ -113,7 +113,7 @@ if selection == 'ABOUT OUR APP':
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('plantbackground.jpg')    
+    add_bg_from_local('beachbackground.jpg')    
     
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3; background-color: #fffafa;} 
@@ -180,7 +180,7 @@ if selection == 'PLANT DISEASES INFO':
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('plantbackground.jpg')    
+    add_bg_from_local('beachbackground.jpg')    
     
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3; background-color: #fffafa;} 
@@ -248,7 +248,7 @@ if selection == 'CONTACT US':
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('plantbackground.jpg')    
+    add_bg_from_local('beachbackground.jpg')    
     
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3; background-color: #fffafa;} 
