@@ -13,7 +13,7 @@ from PIL import Image, ImageOps
 from datetime import date
 from st_btn_select import st_btn_select
 
-selection = st_btn_select(('CHECK YOUR DEBRIS', 'DEBRIS TYPE INFO', 'ABOUT OUR APP', 'CONTACT US'))
+selection = st_btn_select(('CHECK YOUR DEBRIS', 'ABOUT OUR APP','DEBRIS TYPE INFO', 'CLEANUP TIPS',  'CONTACT US'))
 
 
 
@@ -262,7 +262,73 @@ if selection == 'DEBRIS TYPE INFO':
     st.markdown('<p class="font3">The accuracy of our CNN model is currently 92%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
     
     
-       
+if selection == 'CLEANUP TIPS':
+    import base64
+    def add_bg_from_local(image_file):
+        with open(image_file, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read())
+        st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url(data:image/{"PNG"};base64,{encoded_string.decode()});
+            background-size: cover
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+        )
+    add_bg_from_local('beachbackground.jpg')    
+    
+    st.markdown(""" <style> .font {
+    font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">About Common Plant Disease + How to Prevent Them</p>', unsafe_allow_html=True)
+   
+
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">About the Creators</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font3 {
+    font-size:20px ; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3">The information page states relevant information for gardeners and farmers about the details of each disease and tips on how to prevent disease when growing plants. </p>', unsafe_allow_html=True)
+  
+    
+    
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">Mission</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font3 {
+    font-size:20px ;  color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3">Due to the high usage of pesticides, many plant diseases have become resilient and more common. In addition, farmers, especially those living in isolated or rural parts of the world, may not know what or if a disease has affected their plant. Therefore it is essential to figure out what diseases are affecting plants so consumers do not get sick. So the goal of PlantDoc is to provide the farmers and gardeners an opportunity to check the conditions of each and every plant they tend to. PlantDoc aims to make this checking process simpler and more convenient by utilizing AI & machine learning.</p>', unsafe_allow_html=True)
+    
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">How PlantDoc was Built</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font3 {
+    font-size:20px ; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3">PlantDoc has two parts: the AI model and web app. The AI model is built using the TensorFlow framework in the Python Language while the web app is built using Streamlit using HTMl/CSS formatting. We trained the model in Google Colab on a dataset consisting of 15 types of plant conditions sourced from the PlantVillage dataset on Kaggle and deployed the model into the web app with Streamlit.</p>', unsafe_allow_html=True)
+    
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">Future of PlantDoc</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font3 {
+    font-size:20px ; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3">The accuracy of our CNN model is currently 92%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
+    
+    
 if selection == 'CONTACT US':
     import base64
     def add_bg_from_local(image_file):
