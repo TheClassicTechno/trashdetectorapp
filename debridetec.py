@@ -381,5 +381,7 @@ if selection == 'CONTACT US':
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font3"> Copyright © 2022 United States</p>', unsafe_allow_html=True)
     
-    
-     
+    if st.button('Subscribe to Our Newsletter'):
+
+        st.write("[Click to subscribe](https://forms.gle/TGaYxoS68bRQrwzv5)") #displayed when the button is clicked
+ 
