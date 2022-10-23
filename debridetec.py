@@ -62,7 +62,7 @@ if selection == 'CHECK YOUR PLANTS':
     st.markdown(""" <style> .font5 {
     font-size:25px ; font-weight: 600; color: #2e0a06; } 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font5">Upload Trash/Debris Image Here</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font5">Upload Trash/Debris Image Below:</p>', unsafe_allow_html=True)
     
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
