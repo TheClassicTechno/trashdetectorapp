@@ -13,13 +13,13 @@ from PIL import Image, ImageOps
 from datetime import date
 from st_btn_select import st_btn_select
 
-selection = st_btn_select(('CHECK YOUR PLANTS', 'PLANT DISEASES INFO', 'ABOUT OUR APP', 'CONTACT US'))
+selection = st_btn_select(('CHECK YOUR DEBRIS', 'DEBRIS TYPE INFO', 'ABOUT OUR APP', 'CONTACT US'))
 
 
 
     
 
-if selection == 'CHECK YOUR PLANTS':
+if selection == 'CHECK YOUR DEBRIS':
   
     import base64
     def add_bg_from_local(image_file):
@@ -195,7 +195,7 @@ if selection == 'ABOUT OUR APP':
     st.markdown('<p class="font3">The accuracy of our CNN model is currently 92%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
     
     
-if selection == 'PLANT DISEASES INFO':
+if selection == 'DEBRIS TYPE INFO':
     import base64
     def add_bg_from_local(image_file):
         with open(image_file, "rb") as image_file:
