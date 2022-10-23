@@ -43,7 +43,7 @@ if selection == 'CHECK YOUR PLANTS':
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #2e0a06; background-color: #ff958a;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font"> PlantDoc</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font"> DebriDetec</p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:20px; color: ##0a0302;} 
@@ -57,12 +57,12 @@ if selection == 'CHECK YOUR PLANTS':
     st.markdown(""" <style> .font3 {
     font-size:35px ; font-weight: 600; color: #ff958a; background-color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Detect if your plants have a disease or not via AI technology: receive a quick & convenient result within seconds!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">Classify and detect your debris/trash via AI technology: receive a quick & convenient result within seconds!</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font5 {
-    font-size:25px ; font-weight: 600; color: #2e0a06; background-color: #fcf6f5;} 
+    font-size:25px ; font-weight: 600; color: #2e0a06; } 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font5">Upload Plant Image Here</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font5">Upload Trash/Debris Image Here</p>', unsafe_allow_html=True)
     
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
