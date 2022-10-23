@@ -365,7 +365,7 @@ if selection == 'CONTACT US':
   
     if st.button('Email Us'):
 
-        st.write("[Click] to send us an email: (mailto:juliah6169@gmail.com)") #displayed when the button is clicked
+        st.write("[Click to send us an email](mailto:juliah6169@gmail.com)") #displayed when the button is clicked
 
     
     
