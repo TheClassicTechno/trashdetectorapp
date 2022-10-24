@@ -283,30 +283,30 @@ if selection == 'CLEANUP TIPS':
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font">About Common Plant Disease + How to Prevent Them</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font">Tips to Keep the Earth Clean</p>', unsafe_allow_html=True)
    
 
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">About the Creators</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Use single-use items as less as possible.</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">The information page states relevant information for gardeners and farmers about the details of each disease and tips on how to prevent disease when growing plants. </p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">When possible, invest in reusable items, such as water bottles, food containers, coffee mugs, silverware, etc. and bring them wherever you go instead of using plastic ones for example. </p>', unsafe_allow_html=True)
   
     
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">Mission</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">For the waste that you do have, make sure to dispose of them properly.</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ;  color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Due to the high usage of pesticides, many plant diseases have become resilient and more common. In addition, farmers, especially those living in isolated or rural parts of the world, may not know what or if a disease has affected their plant. Therefore it is essential to figure out what diseases are affecting plants so consumers do not get sick. So the goal of PlantDoc is to provide the farmers and gardeners an opportunity to check the conditions of each and every plant they tend to. PlantDoc aims to make this checking process simpler and more convenient by utilizing AI & machine learning.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">For example, recycle materials that are recyclable in your area and keep your lid on your garbage cans when taking them outside so nothing gets blown out.</p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
@@ -326,7 +326,7 @@ if selection == 'CLEANUP TIPS':
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">The accuracy of our CNN model is currently 92%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">The accuracy of our CNN model is currently 95.65%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
     
     
 if selection == 'CONTACT US':
@@ -376,12 +376,13 @@ if selection == 'CONTACT US':
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font3">Streamlit Website Developed By Julia and Justin Huang. Established since Summer/Fall 2022.</p>', unsafe_allow_html=True)
 
+    
+    
+    if st.button('Subscribe to Our Newsletter'):
+
+        st.write("[Click to subscribe](https://forms.gle/TGaYxoS68bRQrwzv5)") 
+        
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font3"> Copyright © 2022 United States</p>', unsafe_allow_html=True)
-    
-    if st.button('Subscribe to Our Newsletter'):
-
-        st.write("[Click to subscribe](https://forms.gle/TGaYxoS68bRQrwzv5)") #displayed when the button is clicked
- 
