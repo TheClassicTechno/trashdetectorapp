@@ -1,6 +1,7 @@
 # DebriDetec: Trash and Debris Detector App
 
-Bringing individuals and communities together to decrease environmental pollution around the world by utilizing AI.
+Bringing individuals and communities together to decrease environmental pollution around the world by utilizing AI. <br>
+Created by Julia and Justin Huang
 
 # Benefits
 - Our app utilizes the latest technology, including AI <br>
