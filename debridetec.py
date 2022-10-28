@@ -189,11 +189,11 @@ if selection == 'ABOUT OUR APP':
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font2">How DebriDetec was Built</p>', unsafe_allow_html=True)
-    st.image("ProcessDiagram.png")
+    st.image("ProcessDiagram.png", caption='Diagram Detailing the Process of DebriDetec, from data input to web app deployment.')
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">DebriDetec aims to make the data gathering process simpler and more convenient by utilizing AI & machine learning. DebriDetec has two parts: the AI model and web app. We built the AI model using the TensorFlow framework in the Python Language while the web app is built using Streamlit using HTMl/CSS formatting. We trained the model in Google Colab on a custom dataset we created consisting of 4 types of trash/debris sourced from the TACO dataset and deployed the model into the web app with Streamlit. This web app is free and both mobile and web friendly for all users. </p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">DebriDetec aims to make the data gathering process simpler and more convenient by utilizing AI & machine learning. DebriDetec has two parts: the AI model and web app. We built the AI model using the TensorFlow-Keras framework in the Python Language while the web app is built using Streamlit using HTMl/CSS formatting. We trained the model in Google Colab on a custom dataset we created consisting of 4 types of trash/debris sourced from the TACO dataset. After training and model evaluation, we converted the model into .h5 format and deployed the model into the web app with Streamlit. This web app is free and both mobile and web friendly for all users. </p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
