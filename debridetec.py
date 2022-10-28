@@ -311,13 +311,13 @@ if selection == 'CLEANUP TIPS':
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">How PlantDoc was Built</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Utilize composting.</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">PlantDoc has two parts: the AI model and web app. The AI model is built using the TensorFlow framework in the Python Language while the web app is built using Streamlit using HTMl/CSS formatting. We trained the model in Google Colab on a dataset consisting of 15 types of plant conditions sourced from the PlantVillage dataset on Kaggle and deployed the model into the web app with Streamlit.</p>', unsafe_allow_html=True)
-    
+    st.markdown('<p class="font3">Composting can help reduce the amount of garbage sent to landfills. To get started, gather an equal amount of browns and green organic materials - the brown provides carbon and the green provides nitrogen.  </p>', unsafe_allow_html=True)
+   
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
