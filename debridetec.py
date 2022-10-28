@@ -316,13 +316,37 @@ if selection == 'CLEANUP TIPS':
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Composting can help reduce the amount of garbage sent to landfills. To get started, gather an equal amount of browns and green organic materials - the brown provides carbon and the green provides nitrogen.  </p>', unsafe_allow_html=True)
-   
+    st.markdown('<p class="font3">Composting your food waste can help reduce the amount of garbage sent to landfills. To get started, gather an equal amount of browns and green organic materials - the brown provides carbon and the green provides nitrogen. This can be used as nutrients for plants to help them grow faster. </p>', unsafe_allow_html=True)
+    
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">Future of PlantDoc</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Reduce the amount of water you use on a daily basis.</p>', unsafe_allow_html=True)
 
+    st.markdown(""" <style> .font3 {
+    font-size:20px ; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3"> When not needed, turn off all faucets in your home, making sure they are turned off all the way with no dripping, as dripping over long periods of time can result in a ton of water being wasted. In addition, when you are cooking or doing other activities with water, instead of throwing away the excess water, use it to water your plants, clean your cars etc.</p>', unsafe_allow_html=True)
+    
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">Make your travel habits more environmentally-friendly.</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font3 {
+    font-size:20px ; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3"> If you are driving, try run errands (shopping, etc) at a time where there is less traffic so less gas can be wasted. In addition, try to plan and combine several trips into one to not only save gas but also save time. </p>', unsafe_allow_html=True)
+
+   
+
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">Sources Used</p>', unsafe_allow_html=True)
+    st.write("[NOAA](https://response.restoration.noaa.gov/about/media/8-ways-keep-earth-clean.html)") 
+    st.write("[EPA](https://www.epa.gov/recycle/composting-home)") 
+    st.write("[Green Child Magazine](https://www.greenchildmagazine.com/7-eco-friendly-tips-to-keep-the-environment-safe-and-clean/)") 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
