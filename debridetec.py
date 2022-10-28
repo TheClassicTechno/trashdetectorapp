@@ -150,7 +150,7 @@ if selection == 'ABOUT OUR APP':
     font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">About DebriDetec</p>', unsafe_allow_html=True)
-   (bottom_image, width=400)
+
     st.image("debrideteclogo.png", width = 300)
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
