@@ -347,10 +347,7 @@ if selection == 'CLEANUP TIPS':
     st.write("[NOAA](https://response.restoration.noaa.gov/about/media/8-ways-keep-earth-clean.html)") 
     st.write("[EPA](https://www.epa.gov/recycle/composting-home)") 
     st.write("[Green Child Magazine](https://www.greenchildmagazine.com/7-eco-friendly-tips-to-keep-the-environment-safe-and-clean/)") 
-    st.markdown(""" <style> .font3 {
-    font-size:20px ; color: #0a0302;} 
-    </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">The accuracy of our CNN model is currently 95.65%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
+   
     
     
 if selection == 'CONTACT US':
