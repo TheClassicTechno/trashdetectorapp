@@ -149,7 +149,7 @@ if selection == 'ABOUT OUR APP':
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font">About PlantDoc</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font">About DebriDetec</p>', unsafe_allow_html=True)
    
 
     st.markdown(""" <style> .font2 {
@@ -160,40 +160,50 @@ if selection == 'ABOUT OUR APP':
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">The web app and model are built by Julia and Justin Huang, high school coders.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">The web app, dataset, and AI model are built by Julia and Justin Huang, passionate high school coders.</p>', unsafe_allow_html=True)
   
     
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">Mission</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">The Problem</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ;  color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Due to the high usage of pesticides, many plant diseases have become resilient and more common. In addition, farmers, especially those living in isolated or rural parts of the world, may not know what or if a disease has affected their plant. Therefore it is essential to figure out what diseases are affecting plants so consumers do not get sick. So the goal of **Shoethentic** is to provide the farmers and gardeners an opportunity to check the conditions of each and every plant they tend to. **Shoethentic** aims to make this checking process simpler and more convenient by utilizing AI & machine learning.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">Due to the urgent problem of environmental pollution, according to nonprofits like Surfers Against Sewage and government agencies like the National Institute of Environmental Health Sciences, 8.3 billion plastic straws pollute beaches around the world, 100,000 marine animals are killed from plastic pollution annually, and 1 in 3 fish caught for human consumption contain microplastics. As human pollution negatively harms the environment, animals, and ourselves,  it is essential to spread awareness and encourage both individuals and organizations to help clean the beaches and other areas to rid of trash and debris. </p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">How PlantDoc was Built</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">The Problem</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font3 {
+    font-size:20px ;  color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3">Therefore, the goal of DebriDetec is to provide individual citizens an opportunity to aid the cleanup process by using our app to clean up trash they see around them and provide information about trash they find to aid cleanup and environmental organizations and data scientists to determine conclusions and patterns about the type of trash in each area.</p>', unsafe_allow_html=True)
+    
+    
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">How DebriDetec was Built</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">PlantDoc has two parts: the AI model and web app. The AI model is built using the TensorFlow framework in the Python Language while the web app is built using Streamlit using HTMl/CSS formatting. We trained the model in Google Colab on a dataset consisting of 15 types of plant conditions sourced from the PlantVillage dataset on Kaggle and deployed the model into the web app with Streamlit.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">DebriDetec aims to make the data gathering process simpler and more convenient by utilizing AI & machine learning. DebriDetec has two parts: the AI model and web app. We built the AI model using the TensorFlow framework in the Python Language while the web app is built using Streamlit using HTMl/CSS formatting. We trained the model in Google Colab on a custom dataset we created consisting of 4 types of trash/debris sourced from the TACO dataset and deployed the model into the web app with Streamlit. This web app is free and both mobile and web friendly for all users. </p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">Future of PlantDoc</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Future of DebriDetec</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">The accuracy of our CNN model is currently 92%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
-    
+    st.markdown('<p class="font3">The accuracy of our CNN model is currently 90-95%, but we plan to improve the accuracy of the AI model even more. Besides sending data about trash to organizations, we also plan to partner with as many organizations and nonprofits as possible to maximize the impact of DebriDetec.</p>', unsafe_allow_html=True)
     
 if selection == 'DEBRIS TYPE INFO':
     import base64
