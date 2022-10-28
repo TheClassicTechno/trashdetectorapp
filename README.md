@@ -11,7 +11,7 @@ Bringing individuals and communities together to decrease environmental pollutio
 # What this Github Repo Includes
 - Model (.h5 format) <br>
 - Streamlit web app (Python file) <br>
-- Model training and data processing (Jupyter Notebook file - <b> fix and organize into sections </b> <br>
+- Model training, accuracy results, and data processing (Jupyter Notebook file) <br>
 - Process Diagram of How We Built our Product (PNG format) <br>
 - Try out our web app here: https://theclassictechno-trashdetectorapp-debridetec-ekpzzi.streamlitapp.com/
 
