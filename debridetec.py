@@ -55,15 +55,16 @@ if selection == 'CHECK YOUR DEBRIS':
     
 
     st.markdown(""" <style> .font3 {
-    font-size:35px ; font-weight: 600; color: #ff958a; background-color: #0a0302;} 
+    font-size:35px ; font-weight: 600; color: #ff958a; background-color: #FFE8E3;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font3">Classify and detect your debris/trash via AI technology: receive a quick & convenient result within seconds!</p>', unsafe_allow_html=True)
-
+    
     st.markdown(""" <style> .font5 {
     font-size:25px ; font-weight: 600; color: #2e0a06; } 
     </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font5">Instructions</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Walk into any outside area, such as a beach, sidewalk, city street, etc. and once you find a bottle, container, plastic wrapping, or soda can, take a picture of it and then click the button below to upload your image.</p>', unsafe_allow_html=True)
     st.markdown('<p class="font5">Upload Trash/Debris Image Below:</p>', unsafe_allow_html=True)
-    
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
     def import_and_predict(image_data, model):
@@ -226,30 +227,30 @@ if selection == 'DEBRIS TYPE INFO':
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #ff958a; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font">About Common Plant Disease + How to Prevent Them</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font">Common Debris/Trash Types</p>', unsafe_allow_html=True)
    
 
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">About the Creators</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">About Our Dataset</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">The information page states relevant information for gardeners and farmers about the details of each disease and tips on how to prevent disease when growing plants. </p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">To train our AI model to detect different types of trash, we created 2 datasets based on the TACO dataset, labeling images of 4  of the most important debris types- cans, bottles, plastics, containers. Images were resized and rescaled to match our tasks and used as both training and testing.</p>', unsafe_allow_html=True)
   
     
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">Mission</p>', unsafe_allow_html=True)
-
+    st.markdown('<p class="font2">Cans</p>', unsafe_allow_html=True)
+    st.image("cans.png", width = 250)
     st.markdown(""" <style> .font3 {
     font-size:20px ;  color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Due to the high usage of pesticides, many plant diseases have become resilient and more common. In addition, farmers, especially those living in isolated or rural parts of the world, may not know what or if a disease has affected their plant. Therefore it is essential to figure out what diseases are affecting plants so consumers do not get sick. So the goal of PlantDoc is to provide the farmers and gardeners an opportunity to check the conditions of each and every plant they tend to. PlantDoc aims to make this checking process simpler and more convenient by utilizing AI & machine learning.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">Mostly soda cans, these are unfortunately </p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
