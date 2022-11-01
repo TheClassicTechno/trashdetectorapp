@@ -84,39 +84,44 @@ if selection == 'CHECK YOUR DEBRIS':
     
     st.markdown('<p class="font2">Note: we use this information in order to keep track of how many items of trash were scanned so we can also send this information to organizations and data scientists to detect any patterns in amount and type of trash in a certain area. For each image you scan into our web app, click the corresponding button to add the correct image type to our system. </p>', unsafe_allow_html=True)
     
-    p_count = 20
-    b_count = 18
-    c_count = 25
-    co_count = 14
+   
+    if 'p_count' not in st.session_state:
+        st.session_state.p_count = 20
+    if 'b_count' not in st.session_state:
+        st.session_state.b_count = 18
+    if 'c_count' not in st.session_state:
+        st.session_state.c_count = 25
+    if 'co_count' not in st.session_state:
+        st.session_state.co_count = 14
+        
 
     p_increment = st.button('Add Plastic')
     if p_increment:
-        p_count += 1
+        st.session_state.p_count += 1
+        
     b_increment = st.button('Add Bottles')
     if b_increment:
-        b_count += 1
+        st.session_state.b_count += 1  
+        
     c_increment = st.button('Add Cans')
     if c_increment:
-        c_count += 1
+        st.session_state.c_count += 1
     co_increment = st.button('Add Containers')
     if co_increment:
-        co_count += 1
+        st.session_state.co_count += 1
+
+  
+    
     todays_date = date.today()
     st.subheader('Amount of Items Detected since: ')
     st.write(todays_date)
-    st.write('Number of Plastics: ', p_count)
-    st.write('Number of Bottles: ', b_count)
-    st.write('Number of Cans since: ', c_count)
-    st.write('Number of Containers: ', co_count)
+    st.write('Number of Plastics: ', st.session_state.p_count)
+    st.write('Number of Bottles: ', st.session_state.b_count)
+    st.write('Number of Cans since: ', st.session_state.c_count)
+    st.write('Number of Containers: ', st.session_state.co_count)
+   
     
-    if 'count' not in st.session_state:
-        st.session_state.count = 0
-
-    increment = st.button('Increment')
-    if increment:
-        st.session_state.count += 1
-
-    st.write('Count = ', st.session_state.count)
+    
     
     def import_and_predict(image_data, model):
         size = (256, 256)
