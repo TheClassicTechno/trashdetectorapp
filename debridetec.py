@@ -73,14 +73,31 @@ if selection == 'CHECK YOUR DEBRIS':
     st.markdown('<p class="font5">Upload Trash/Debris Image Below:</p>', unsafe_allow_html=True)
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
        
-    st.title('Counter Example')
-    count = 0
+    st.subtitle('Count # items collected so far')
+    st.text('Note: we use this information in order to keep track of how many items of trash were scanned so we can also send this information to organizations and data scientists to detect any patterns in amount and type of trash in a certain area.')
+    p_count = 20
+    b_count = 18
+    c_count = 25
+    co_count = 14
 
-    increment = st.button('Increment')
-    if increment:
-        count += 1
-
-    st.write('Count = ', count)
+    p_increment = st.button('Add Plastic')
+    if p_increment:
+        p_count += 1
+    b_increment = st.button('Add Bottles')
+    if b_increment:
+        b_count += 1
+    c_increment = st.button('Add Cans')
+    if c_increment:
+        c_count += 1
+    co_increment = st.button('Add Containers')
+    if co_increment:
+        co_count += 1
+    todays_date = date.today()
+    st.write('# of Plastics since '+todays_date, p_count)
+    st.write('# of Bottles since '+todays_date, b_count)
+    st.write('# of Cans since '+todays_date, c_count)
+    st.write('# of Containers since '+todays_date, co_count)
+    
     def import_and_predict(image_data, model):
         size = (256, 256)
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
