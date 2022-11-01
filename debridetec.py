@@ -127,7 +127,7 @@ if selection == 'CHECK YOUR DEBRIS':
     birth_date = st.date_input("Date of Birth:", min_value = date(1900, 1, 1), max_value = date.today())
     email_address = st.text_input("Email Address:")
     phone_number = st.text_input("Phone Number:")
-    submit = st.button("Submit")    
+    submit = st.form_submit_button(label="Submit")    
     if submit:
 
         st.write("**Your information provided has been sent to DebriDetec creators, who will then evaluate and analyze it before sending it over to cleanup organizations.**")
