@@ -239,7 +239,7 @@ if selection == 'DEBRIS TYPE INFO':
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">To train our AI model to detect different types of trash, we created 2 datasets based on the TACO dataset, labeling images of 4  of the most important debris types- cans, bottles, plastics, containers. Images were resized and rescaled to match our tasks and used as both training and testing.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">To train our AI model to detect different types of trash, we created 2 datasets based on the TACO dataset, labeling images of 4  of the most important debris types- cans, bottles, plastics, containers. Images were resized and rescaled to match our tasks and used as both training and testing. As you are on the lookout for trash, be sure to pay attention to the info about each type below.</p>', unsafe_allow_html=True)
   
     
     
@@ -247,33 +247,44 @@ if selection == 'DEBRIS TYPE INFO':
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font2">Cans</p>', unsafe_allow_html=True)
-    st.image("cans.png", width = 250)
+    st.image("cans.jpg", width = 250)
     st.markdown(""" <style> .font3 {
     font-size:20px ;  color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Mostly soda cans, these are unfortunately </p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">These are mostly soda cans, with a smooth cylinder shape made of aluminum alloy.</p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">How PlantDoc was Built</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Bottles</p>', unsafe_allow_html=True)
+    st.image("bottles.jpg", width = 250)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">PlantDoc has two parts: the AI model and web app. The AI model is built using the TensorFlow framework in the Python Language while the web app is built using Streamlit using HTMl/CSS formatting. We trained the model in Google Colab on a dataset consisting of 15 types of plant conditions sourced from the PlantVillage dataset on Kaggle and deployed the model into the web app with Streamlit.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">These are mostly long, plastic bottles or wine bottles made of glass. </p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">Future of PlantDoc</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Containers</p>', unsafe_allow_html=True)
+    st.image("container.jpg", width = 250)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">The accuracy of our CNN model is currently 92%, but we plan to improve the accuracy of the AI model even more. We also plan to partner with agricultural businesses so we can test out the app with farmers.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">These are either styrofoam food containers or large cardboard containers.</p>', unsafe_allow_html=True)
     
-    
+    st.markdown(""" <style> .font2 {
+    font-size:30px ; font-weight: 600; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font2">Plastics</p>', unsafe_allow_html=True)
+    st.image("plastics.jpg", width = 250)
+
+    st.markdown(""" <style> .font3 {
+    font-size:20px ; color: #0a0302;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font3">These can be flat plastic bottle caps, food wrappings, or plastic chip bags. </p>', unsafe_allow_html=True)
 if selection == 'CLEANUP TIPS':
     import base64
     def add_bg_from_local(image_file):
