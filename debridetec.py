@@ -74,7 +74,9 @@ if selection == 'CHECK YOUR DEBRIS':
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
        
     st.subheader('Count # items collected so far')
-    st.text('Note: we use this information in order to keep track of how many items of trash were scanned so we can also send this information to organizations and data scientists to detect any patterns in amount and type of trash in a certain area.')
+    
+    st.markdown('<p class="font2">Note: we use this information in order to keep track of how many items of trash were scanned so we can also send this information to organizations and data scientists to detect any patterns in amount and type of trash in a certain area.</p>', unsafe_allow_html=True)
+    
     p_count = 20
     b_count = 18
     c_count = 25
@@ -93,10 +95,12 @@ if selection == 'CHECK YOUR DEBRIS':
     if co_increment:
         co_count += 1
     todays_date = date.today()
-    st.write('# of Plastics since '+todays_date, p_count)
-    st.write('# of Bottles since '+todays_date, b_count)
-    st.write('# of Cans since '+todays_date, c_count)
-    st.write('# of Containers since '+todays_date, co_count)
+    st.write('# of Items Detected since ')
+    st.write(todays_date)
+    st.write('# of Plastics: ', p_count)
+    st.write('# of Bottles: ', b_count)
+    st.write('# of Cans since: ', c_count)
+    st.write('# of Containers: ', co_count)
     
     def import_and_predict(image_data, model):
         size = (256, 256)
