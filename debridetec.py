@@ -73,7 +73,7 @@ if selection == 'CHECK YOUR DEBRIS':
     st.markdown('<p class="font5">Upload Trash/Debris Image Below:</p>', unsafe_allow_html=True)
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
        
-    st.subtitle('Count # items collected so far')
+    st.subheader('Count # items collected so far')
     st.text('Note: we use this information in order to keep track of how many items of trash were scanned so we can also send this information to organizations and data scientists to detect any patterns in amount and type of trash in a certain area.')
     p_count = 20
     b_count = 18
