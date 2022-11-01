@@ -74,7 +74,27 @@ if selection == 'CHECK YOUR DEBRIS':
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
        
     predictionText = "Prediction: Waiting for an image upload"
+    def import_and_predict(image_data, model):
+        size = (256, 256)
+        image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
+        img = tf.keras.utils.img_to_array(image)
+        img = tf.expand_dims(img, 0)
+        probs = model.predict(img)
+        score = tf.nn.softmax(probs[0])
+        text = ("DebriDetec predicts that this is an image of **{}."
+        .format(class_names[np.argmax(score)], 100 * np.max(score)))
+        return text
 
+    
+  
+
+    loaded_model = tf.keras.models.load_model('debridetec_model.h5')
+    class_names = [
+    'BOTTLES',
+    'CANS',
+    'CONTAINERS',
+    'PLASTIC']
+    
     if image is not None:
         st.image(image)
         predictionText = (import_and_predict(Image.open(image), loaded_model))
@@ -123,26 +143,7 @@ if selection == 'CHECK YOUR DEBRIS':
     
     
     
-    def import_and_predict(image_data, model):
-        size = (256, 256)
-        image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
-        img = tf.keras.utils.img_to_array(image)
-        img = tf.expand_dims(img, 0)
-        probs = model.predict(img)
-        score = tf.nn.softmax(probs[0])
-        text = ("DebriDetec predicts that this is an image of **{}."
-        .format(class_names[np.argmax(score)], 100 * np.max(score)))
-        return text
-
     
-  
-
-    loaded_model = tf.keras.models.load_model('debridetec_model.h5')
-    class_names = [
-    'BOTTLES',
-    'CANS',
-    'CONTAINERS',
-    'PLASTIC']
 
 
     
