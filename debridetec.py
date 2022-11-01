@@ -55,7 +55,7 @@ if selection == 'CHECK YOUR DEBRIS':
     
 
     st.markdown(""" <style> .font3 {
-    font-size:35px ; font-weight: 600; color: #ff958a; background-color: #FFE8E3;} 
+    font-size:35px ; font-weight: 600; color: #ff958a; background-color: #FFF8F6;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font3">Classify and detect your debris/trash via AI technology: receive a quick & convenient result within seconds!</p>', unsafe_allow_html=True)
     
@@ -63,7 +63,8 @@ if selection == 'CHECK YOUR DEBRIS':
     font-size:25px ; font-weight: 600; color: #2e0a06; } 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font5">Instructions</p>', unsafe_allow_html=True)
-    st.markdown('<p class="font2">Walk into any outside area, such as a beach, sidewalk, city street, etc. and once you find a bottle, container, plastic wrapping, or soda can, take a picture of it and then click the button below to upload your image.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Walk into any outside area, such as a beach, sidewalk, city street, etc. and once you find a bottle, container, plastic wrapping, or soda can, take a picture of it and then click the button below to upload your image. See the Debris Type Info tab for more info on the types of trash DebriDetec detects.</p>', unsafe_allow_html=True)
+    
     st.markdown('<p class="font5">Upload Trash/Debris Image Below:</p>', unsafe_allow_html=True)
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
@@ -74,7 +75,7 @@ if selection == 'CHECK YOUR DEBRIS':
         img = tf.expand_dims(img, 0)
         probs = model.predict(img)
         score = tf.nn.softmax(probs[0])
-        text = ("DebriDetec predicts that this is an image of **{} with {:.2f}% confidence**."
+        text = ("DebriDetec predicts that this is an image of **{}."
         .format(class_names[np.argmax(score)], 100 * np.max(score)))
         return text
 
