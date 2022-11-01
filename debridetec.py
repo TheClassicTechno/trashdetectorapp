@@ -54,15 +54,7 @@ if selection == 'CHECK YOUR DEBRIS':
    
 
 
-    with open("file.txt", "r") as f:
-        a = f.readline()  # starts as a string
-        a = 0 if a == "" else int(a)  # check if its an empty string, otherwise should be able to cast using int()
-
-    if st.button("Click me"):
-        a += 1  
-        with open("file.txt", "w") as f:
-            f.truncate()
-            f.write(f"{a}")
+ 
 
 
     
@@ -80,7 +72,15 @@ if selection == 'CHECK YOUR DEBRIS':
     
     st.markdown('<p class="font5">Upload Trash/Debris Image Below:</p>', unsafe_allow_html=True)
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
+       
+    st.title('Counter Example')
+    count = 0
 
+    increment = st.button('Increment')
+    if increment:
+        count += 1
+
+    st.write('Count = ', count)
     def import_and_predict(image_data, model):
         size = (256, 256)
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
