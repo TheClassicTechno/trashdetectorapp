@@ -95,12 +95,12 @@ if selection == 'CHECK YOUR DEBRIS':
     if co_increment:
         co_count += 1
     todays_date = date.today()
-    st.write('# of Items Detected since ')
+    st.write('Amount of Items Detected since ')
     st.write(todays_date)
-    st.write('# of Plastics: ', p_count)
-    st.write('# of Bottles: ', b_count)
-    st.write('# of Cans since: ', c_count)
-    st.write('# of Containers: ', co_count)
+    st.write('Number of Plastics: ', p_count)
+    st.write('Number of Bottles: ', b_count)
+    st.write('Number of Cans since: ', c_count)
+    st.write('Number of Containers: ', co_count)
     
     def import_and_predict(image_data, model):
         size = (256, 256)
