@@ -102,12 +102,21 @@ if selection == 'CHECK YOUR DEBRIS':
     if co_increment:
         co_count += 1
     todays_date = date.today()
-    st.write(**Amount of Items Detected since: **)
+    st.subheader('Amount of Items Detected since: ')
     st.write(todays_date)
     st.write('Number of Plastics: ', p_count)
     st.write('Number of Bottles: ', b_count)
     st.write('Number of Cans since: ', c_count)
     st.write('Number of Containers: ', co_count)
+    
+    if 'count' not in st.session_state:
+        st.session_state.count = 0
+
+    increment = st.button('Increment')
+    if increment:
+        st.session_state.count += 1
+
+    st.write('Count = ', st.session_state.count)
     
     def import_and_predict(image_data, model):
         size = (256, 256)
