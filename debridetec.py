@@ -73,9 +73,16 @@ if selection == 'CHECK YOUR DEBRIS':
     st.markdown('<p class="font5">Upload Trash/Debris Image Below:</p>', unsafe_allow_html=True)
     image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
        
+    predictionText = "Prediction: Waiting for an image upload"
+
+    if image is not None:
+        st.image(image)
+        predictionText = (import_and_predict(Image.open(image), loaded_model))
+
+    st.markdown(predictionText)   
     st.subheader('Count # items collected so far')
     
-    st.markdown('<p class="font2">Note: we use this information in order to keep track of how many items of trash were scanned so we can also send this information to organizations and data scientists to detect any patterns in amount and type of trash in a certain area.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Note: we use this information in order to keep track of how many items of trash were scanned so we can also send this information to organizations and data scientists to detect any patterns in amount and type of trash in a certain area. For each image you scan into our web app, click the corresponding button to add the correct image type to our system. </p>', unsafe_allow_html=True)
     
     p_count = 20
     b_count = 18
@@ -95,7 +102,7 @@ if selection == 'CHECK YOUR DEBRIS':
     if co_increment:
         co_count += 1
     todays_date = date.today()
-    st.write('Amount of Items Detected since ')
+    st.write('**Amount of Items Detected since: **')
     st.write(todays_date)
     st.write('Number of Plastics: ', p_count)
     st.write('Number of Bottles: ', b_count)
@@ -124,13 +131,7 @@ if selection == 'CHECK YOUR DEBRIS':
     'plastic']
 
 
-    predictionText = "Prediction: Waiting for an image upload"
-
-    if image is not None:
-        st.image(image)
-        predictionText = (import_and_predict(Image.open(image), loaded_model))
-
-    st.markdown(predictionText)   
+    
     
     #st.markdown('<p class="font2">predictionText</p>', unsafe_allow_html=True)
     st.markdown(""" <style> .fontSub {
