@@ -51,7 +51,20 @@ if selection == 'CHECK YOUR DEBRIS':
     st.markdown('<p class="font2">Created by Julia & Justin Huang</p>', unsafe_allow_html=True)
     
     
-      
+   
+
+
+    with open("file.txt", "r") as f:
+        a = f.readline()  # starts as a string
+        a = 0 if a == "" else int(a)  # check if its an empty string, otherwise should be able to cast using int()
+
+    if st.button("Click me"):
+        a += 1  
+        with open("file.txt", "w") as f:
+            f.truncate()
+            f.write(f"{a}")
+
+
     
 
     st.markdown(""" <style> .font3 {
