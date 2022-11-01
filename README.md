@@ -5,7 +5,7 @@ Created by Julia and Justin Huang
 
 # Benefits
 - Our app utilizes the latest technology, including AI <br>
-- Our AI model is 95% accurate for 4 different debris types <br>
+- Our AI model is 90-95% accurate for 4 different debris types <br>
 - Our web app is both mobile and web friendly for all users around the world <br>
 - Our solution is free for individuals <br>
 
