@@ -139,10 +139,10 @@ if selection == 'CHECK YOUR DEBRIS':
 
     loaded_model = tf.keras.models.load_model('debridetec_model.h5')
     class_names = [
-    'bottles',
-    'cans',
-    'containers',
-    'plastic']
+    'BOTTLES',
+    'CANS',
+    'CONTAINERS',
+    'PLASTIC']
 
 
     
