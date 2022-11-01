@@ -102,7 +102,7 @@ if selection == 'CHECK YOUR DEBRIS':
     if co_increment:
         co_count += 1
     todays_date = date.today()
-    st.write('**Amount of Items Detected since: **')
+    st.write(**Amount of Items Detected since: **)
     st.write(todays_date)
     st.write('Number of Plastics: ', p_count)
     st.write('Number of Bottles: ', b_count)
