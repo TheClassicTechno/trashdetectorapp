@@ -246,7 +246,7 @@ if selection == 'ABOUT OUR APP':
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font2">How DebriDetec was Built</p>', unsafe_allow_html=True)
-    st.image("ProcessDiagram.png", caption='Diagram Detailing the Process of DebriDetec, from data input to web app deployment.')
+    st.image("processdiagram.png", caption='Diagram Detailing the Process of DebriDetec, from data input to web app deployment.')
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
