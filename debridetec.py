@@ -151,7 +151,7 @@ if selection == 'ABOUT OUR APP':
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">About DebriDetec</p>', unsafe_allow_html=True)
 
-    st.image("debrideteclogo.png", width = 80)
+    st.image("debrideteclogo.png", width = 130)
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
