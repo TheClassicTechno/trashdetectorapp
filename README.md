@@ -14,7 +14,7 @@ Created by Julia and Justin Huang
 - Streamlit web app (Python file) <br>
 - Model training, accuracy results, and data processing (Jupyter Notebook file) <br>
 - Process Diagram of How We Built our Product (PNG format) <br>
-- Try out our web app here: https://theclassictechno-trashdetectorapp-debridetec-ekpzzi.streamlitapp.com/
+
 
 # About Our Model
 Our model classifies four of the most common and critical types of trash, debris, etc. from the TACO Custom dataset, which we adapted/sourced from the original Taco dataset. This original Taco dataset was created for object detection, so we modified it to be used for classification. See original Taco dataset (1.6K images) here: http://tacodataset.org/
