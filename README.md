@@ -3,6 +3,8 @@
 Bringing individuals and communities together to decrease environmental pollution around the world by utilizing AI. <br>
 Created by Julia and Justin Huang
 
+DebriDetec website: https://theclassictechno-trashdetectorapp-debridetec-ekpzzi.streamlit.app/
+
 # Benefits
 - Our app utilizes the latest technology, including AI <br>
 - Our AI model is 90-95% accurate for 4 different debris types <br>
