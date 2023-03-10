@@ -4,6 +4,7 @@ Bringing individuals and communities together to decrease environmental pollutio
 Created by Julia and Justin Huang
 
 DebriDetec website: https://theclassictechno-trashdetectorapp-debridetec-ekpzzi.streamlit.app/
+Note: utilized CNN AI model I created from the cleansea_model github repo. 
 
 # Benefits
 - Our app utilizes the latest technology, including AI <br>
