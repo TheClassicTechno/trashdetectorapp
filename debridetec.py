@@ -133,7 +133,7 @@ if selection == 'CHECK YOUR DEBRIS':
   
     
     todays_date = date.today()
-    st.subheader('Amount of Items Detected since: ')
+    st.subheader('Amount of Items Detected from 11-20-22 to: ')
     st.write(todays_date)
     st.write('Number of Plastics: ', st.session_state.p_count)
     st.write('Number of Bottles: ', st.session_state.b_count)
